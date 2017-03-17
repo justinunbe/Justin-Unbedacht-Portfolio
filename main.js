@@ -24,6 +24,11 @@ $(document).ready(function() {
 
 //  Functions
 
+    setTimeout(function(){
+        console.log("hit");
+        $(".full-background").fadeOut(2000);
+      }, 5000);
+
     $(window).unload(function() {
         quenchuaCounter = 1;
         flappyCounter = 1;
