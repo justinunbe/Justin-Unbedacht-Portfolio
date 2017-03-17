@@ -1,118 +1,107 @@
 
+
+
+$(document).ready(function() {
+
+
+
 // variables
+    var $header_top = $('.header-top');
+    var $nav = $('nav');
+    var playVideo = document.getElementById('quenchua-video');
+    var flappyGo = document.getElementById('flappy-video');
+    var appleGo = document.getElementById('apple-video');
+    var portfolioGo = document.getElementById('porfolio-video');
+    var quenchuaCounter = 1;
+    var flappyCounter = 1;
+    var appleCounter = 1;
+    var portfolioCounter = 1;
 
 
-$(document).ready(function(){
 
 
-var $header_top = $('.header-top');
-var $nav = $('nav');
-var playVideo = document.getElementById('quenchua-video');
-var flappyGo =document.getElementById('flappy-video');
-var quenchuaCounter = 1;
-var flappyCounter = 1;
-
-$( window ).unload(function() {
-  quenchuaCounter = 1;
-  flappyCounter = 1;
-  console.log("goodbye");
-});
 
 
-function playMovie () {
-  if (quenchuaCounter === 1) {
-    playVideo.play();
-    quenchuaCounter = 2;
-    console.log("should be playing");
-  }
-  console.log("quenchuaCounterhit", quenchuaCounter);
-}
+//  Functions
 
-function playMovieFlappy () {
-  if (flappyCounter === 1) {
-    flappyGo.play();
-    flappyCounter = 2;
-    console.log("should be playing flappy");
-  }
-  console.log("flappyCounterhit", flappyCounter);
-}
+    $(window).unload(function() {
+        quenchuaCounter = 1;
+        flappyCounter = 1;
+        appleCounter = 1;
+        console.log("goodbye");
+        var portfolioCounter = 1;
+    });
 
 
-// toggle menu
-$header_top.find('a').on('click', function() {
-  $(this).parent().toggleClass('open-menu');
-});
 
-// fullpage customization
-$('#fullpage').fullpage({
-  sectionsColor: ['gray', 'white', 'white', 'white', 'white'],
-  sectionSelector: '.vertical-scrolling',
-  slideSelector: '.horizontal-scrolling',
-  navigation: false,
-  slidesNavigation: false,
-  controlArrows: false,
-  verticalCentered: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection'],
-  menu: '#menu',
-
-  afterLoad: function(anchorLink, index) {
-    $header_top.css('background', 'rgba(0, 47, 77, .3)');
-    $nav.css('background', 'rgba(0, 47, 77, .25)');
-    console.log("afterLoad", index);
-    if (index == 5) {
-        $('#fp-nav').hide();
-      }
-
-    if(index === 2){
-      playMovieFlappy();
-    }
-  },
-
-  onLeave: function(index, nextIndex, direction) {
-    console.log("onLeave", index);
-    if(index == 5) {
-      $('#fp-nav').show();
-    }
-  },
-
-  afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-
-    console.log("afterSlideLoad", index, "slideIndex", slideIndex);
-    if(anchorLink == 'secondSection' && slideIndex === 1) {
-      $.fn.fullpage.setAllowScrolling(false, 'up');
-      $header_top.css('background', 'transparent');
-      $nav.css('background', 'transparent');
-      $(this).css('background', 'white');
-
-      playMovie();
-
+    function playMovie() {
+        if (quenchuaCounter === 1) {
+            playVideo.play();
+            quenchuaCounter = 2;
+            console.log("should be playing quenchua");
+        }
     }
 
-    if(anchorLink === 'secondSection' && slideIndex === 0) {
-      console.log("flappy movie");
 
-
+    function playAppleMovie() {
+        if (appleCounter === 1) {
+            appleGo.play();
+            appleCounter = 2;
+            console.log("should be playing apple");
+        }
     }
 
-  },
 
-  onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-    console.log("onSlideLeave", index, "slideIndex", slideIndex);
-    if(index == 2 && slideIndex == 1) {
-      $.fn.fullpage.setAllowScrolling(true, 'up');
-      $header_top.css('background', 'rgba(0, 47, 77, .3)');
-      $nav.css('background', 'rgba(0, 47, 77, .25)');
-      console.log("yay");
+
+    function playMovieFlappy() {
+        if (flappyCounter === 1) {
+            flappyGo.play();
+            flappyCounter = 2;
+            console.log("should be playing flappy");
+        }
     }
-  }
-});
+
+    function playMoviePortfolio() {
+        if (portfolioCounter === 1) {
+            portfolioGo.play();
+            portfolioCounter = 2;
+            console.log("should be playing portfolio");
+        }
+    }
 
 
-$(document).ready(function(){
-      $('.slick-slider').slick({
+
+    $('.slick-slider').slick({
         autoplay: true,
         arrows: false,
         autoplaySpeed: 1500
-      });
     });
- });       //.ready function
+
+    function topPosition () {
+      var position = $(document).scrollTop();
+      console.log(position);
+    }
+
+    $(document).scroll(function(){
+      var position = $(document).scrollTop();
+
+      if (position > 450 && position < 550) {
+        playAppleMovie();
+        console.log("Playing Apple");
+      }
+      else if(position > 850 && position < 950) {
+        playMovie();
+        console.log("Playing Quenchua");
+      }
+      else if (position > 1250 && position < 1350) {
+        playMovieFlappy();
+        console.log("playing Flappy");
+      }
+      else if (position > 1650 && position < 1750) {
+        playMoviePortfolio();
+        console.log("playing portfolio");
+      }
+
+      topPosition();
+});
+}); //.ready function
