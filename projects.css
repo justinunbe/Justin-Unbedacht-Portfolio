@@ -25,7 +25,7 @@
   }
 
   #quenchua-video{
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     width: 100%    !important;
   height: auto   !important;
   box-shadow: 10px 10px 5px #888888;
@@ -33,7 +33,7 @@
   }
 
   #flappy-video{
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     width: 100%    !important;
   height: auto   !important;
   box-shadow: 10px 10px 5px #888888;
@@ -41,7 +41,7 @@
   }
 
   #apple-video{
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     width: 100%    !important;
   height: auto   !important;
   box-shadow: 10px 10px 5px #888888;
@@ -49,12 +49,18 @@
   }
 
   #porfolio-video{
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8dpx 8px 8px 8px;
     width: 100%    !important;
   height: auto   !important;
   box-shadow: 10px 10px 5px #888888;
   border: #A9A9A9 solid 1px;
   }
+
+
+  #push-down-for-flappy{
+    margin-top: 85px;
+  }
+
 
   #white-line-section{
       background-color:#FFFFFF;
@@ -154,6 +160,7 @@
     border-left: #A9A9A9 1px solid;
     border-right: #A9A9A9 1px solid;
     border-radius: 4px 4px 0px 0px;
+    display: none;
   }
 
   .internt-bottom-one{
@@ -442,7 +449,9 @@
 /*Apple full*/
 @media only screen and (min-width: 780px) and (min-height: 1px){
 
-
+  #push-down-for-flappy{
+    margin-top: 0px;
+  }
   /*top-horizontal*/
   #portfolio-gone{
     display: none;
