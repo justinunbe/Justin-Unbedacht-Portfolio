@@ -27,7 +27,7 @@ $(document).ready(function() {
     setTimeout(function(){
         console.log("hit");
         $(".full-background").fadeOut(2000);
-      }, 5000);
+      }, 7000);
 
     $(window).unload(function() {
         quenchuaCounter = 1;
