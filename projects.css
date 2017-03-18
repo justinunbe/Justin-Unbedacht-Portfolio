@@ -181,6 +181,7 @@
     border-radius: 1px;
     color: #A9A9A9;
     font-weight: 200;
+
   }
 
   .internet-buttons-container-one{
@@ -283,6 +284,8 @@
     color: white;
     border-radius: 5px;
     background: #A9A9A9;
+    border: blue solid;
+    display: none;
   }
 
 
@@ -554,6 +557,7 @@
     color: white;
     border-radius: 5px;
     background: #A9A9A9;
+    display: none;
   }
 
 }
@@ -654,6 +658,7 @@
     font-size: 20px; color: white;
     border-radius: 5px;
     background: #A9A9A9;
+    display: none;
   }
 }
 
@@ -885,6 +890,7 @@
     color: white;
     border-radius: 5px;
     background: #A9A9A9;
+    display: none;
   }
 
   /*quadrant three*/
