@@ -26,9 +26,6 @@
     flex-direction: column;
     background-color: white;
     margin: auto;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
 
@@ -58,6 +55,7 @@
     position: relative;
     z-index: 7;
     padding-right: 80px;
+    padding-top: 40px;
   }
 
 

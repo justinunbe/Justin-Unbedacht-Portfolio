@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:500');
+
 html {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
@@ -21,6 +23,15 @@ a {
 #233237
 #984B43
 #EAC67A
+
+
+/*FONTS*/
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+
+
 
 
 /*text area*/
@@ -162,354 +173,9 @@ a {
 
 /*MEDIA QUERIES*/
 
-
-
-
-/*Smaller Than 600*/
-
-@media only screen and (min-width: 1px), screen and (min-height: 1px) {
-  /*extra-area*/
-
-  .extra-room-slide-one{
-    width: 100vw;
-    background-color: gray;
-  }
-  /*SECTION-ONE HOME PAGE*/
-  .whole-section-one{
-    height: 100vh;
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-
-  /*first section*/
-  .first-section-home-page{
-    max-width: 1280px;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #CAEBF2;
-    position: relative;
-    padding-top: 20px;
-  }
-
-  .my-name{
-    position: relative;
-    color: white;
-    font-size: 25px;
-    z-index: 10;
-  }
-
-  /*second section*/
-  .second-section-div{
-    max-width: 1280px;
-    height: 50vh;
-    background-color: #CAEBF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    position: relative;
-  }
-
-  .pic-circle-filter{
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(pics/skyscrapers.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*filter: grayscale(100%);*/
-    opacity: 1;
-    z-index: 1;
-    position: relative;
-  }
-
-  .pic-circle-filter:after {
-      content: "";
-      display: block;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(202,235,242,1) 70%,rgba(202,235,242,1) 110%);
-      border-radius: 50%;
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-  }
-
-  .filter-cover{
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    opacity: .7;
-    background-color: #CAEBF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .big-text-container{
-  height: 200px;
-  width: 200px;
-  font-weight: 500;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  opacity: 1;
-  }
-
-  .sleek-span{
-    font-weight: 200;
-  }
-
-  .modern-span{
-  font-weight: 200;
-  color: #FF3B3F;
-  }
-
-
-
-
-  /*TRIANGLE AREA*/
-  .third-section-div{
-    max-width: 1280px;
-    height: 20vh;
-    background-color: #CAEBF2;
-    opacity: 1;
-  }
-
-
-
-
-  /*awesome font code*/
-  .awe-color{
-    color: #FF3B3F;
-  }
-
-
-  /*Code for SVG Triangle*/
-  svg{
-    fill: white;
-    z-index: 90;
-    position: relative;
-  }
-
-
-  /*third section*/
-  .fourth-section-div{
-    max-width: 1280px;
-    height: 20vh;
-    font-weight: 200;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    z-index: 90;
-  }
-
-  .circle-container-one{
-    height: 70px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .circle-container-two{
-    height: 70px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .circle-container-three{
-    height: 70px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .circle-one{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-  }
-
-  .circle-two{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-  }
-
-  .circle-three{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-  }
-}
-
-
-
-
-
-
-@media only screen and (min-width: 600px) and (min-height: 1px) {
-
-  /*second section*/
-  .second-section-div{
-    max-width: 1280px;
-    background-color: #CAEBF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    position: relative;
-  }
-
-  .pic-circle-filter{
-    width: 650px;
-    height: 650px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(pics/skyscrapers.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*filter: grayscale(100%);*/
-    opacity: 1;
-    z-index: 1;
-    position: relative;
-  }
-
-
-}
-
-
-
-@media only screen and (min-width: 800px) and (min-height: 1px) {
-
-
-
-  .second-section-div{
-    max-width: 1280px; background-color: #CAEBF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    position: relative;
-  }
-
-
-  .pic-circle-filter{
-    width: 850px;
-    height: 850px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(pics/skyscrapers.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*filter: grayscale(100%);*/
-    opacity: 1;
-    z-index: 1;
-    position: relative;
-  }
-
-
-}
-
-
-@media only screen and (min-width: 1000px) and (min-height: 1px) {
-
-  .pic-circle-filter{
-    width: 1050px;
-    height: 1050px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(pics/skyscrapers.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*filter: grayscale(100%);*/
-    opacity: 1;
-    z-index: 1;
-    position: relative;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*1100 and up*/
 
-@media only screen and (min-height: 1100px) {
+@media only screen and (min-height: 100px) {
 
   /*extra-area*/
 
@@ -520,104 +186,77 @@ a {
   /*SECTION-ONE HOME PAGE*/
   .whole-section-one{
     max-width: 1280px;
-    height: 100vh;
+    height: 715px;
     display: flex;
     flex-direction: column;
     margin: auto;
   }
 
 
-
+  /*header*/
+  .first-section-home-page{
+  border: green solid;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  z-index: 10;
+  }
+  
   /*text area*/
   .second-section-div{
     max-width: 1280px;
-    height: 75vh;
-    background-color: #CAEBF2;
+    height: 520px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 1;
     position: relative;
   }
 
-  .pic-circle-filter{
-    width: 1400px;
-    height: 1400px;
-    border-radius: 50%;
+
+  .home-cover-pic{
+    width: 100%;
+    height: 705px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(pics/skyscrapers.jpg);
+    position: relative;
+    background-image: url(pics/top-view-desk-4.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    /*filter: grayscale(100%);*/
-    opacity: 1;
-    z-index: 1;
-    position: relative;
+    z-index: 5;
+    margin-top: -50px;
   }
-
-  .pic-circle-filter:after {
-      content: "";
-      display: block;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(202,235,242,1) 70%,rgba(202,235,242,1) 110%);
-      border-radius: 50%;
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-  }
-
-  .filter-cover{
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    opacity: .7;
-    background-color: #CAEBF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
   .big-text-container{
   height: 300px;
-  width: 350px;
-  font-weight: 500;
-  font-size: 40px;
+  width: 750px;
+  font-weight: 600;
+  font-size: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 20;
   opacity: 1;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  }
+  .web-dev-text{
+    font-size: 50px;
+    margin-top: 30px;
   }
 
-  .sleek-span{
-    font-weight: 200;
-  }
-
-  .modern-span{
-  font-weight: 200;
-  color: #FF3B3F;
-  }
 
   /*triangle area*/
   .third-section-div{
     max-width: 1280px;
-    height: 13vh;
-    background-color: #CAEBF2;
+    height: 150px;
     opacity: 1;
-  }
-
-
-  /*awesome font code*/
-  .awe-color{
-    color: #FF3B3F;
   }
 
 
   /*Code for SVG Triangle*/
   svg{
     fill: white;
-    z-index: 90;
+    z-index: 6;
     position: relative;
   }
 
@@ -625,92 +264,20 @@ a {
   /*third section*/
   .fourth-section-div{
     max-width: 1280px;
-    height: 15vh;
+    height: 80px;
     font-weight: 200;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    z-index: 90;
+    z-index: 6;
   }
-
-  .circle-container-one{
-    height: 120px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 30px;
-  }
-
-  .circle-container-two{
-    height: 120px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 29px;
-  }
-
-  .circle-container-three{
-    height: 120px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 30px;
-  }
-
-  .circle-one{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-  }
-
-  .circle-two{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-  }
-
-  .circle-three{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-  }
-}
-
 
 
 @media only screen and (min-width: 600px) and (min-height: 1100px) {
 
-  .big-text-container{
-  height: 300px;
-  width: 500px;
-  font-weight: 500;
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  opacity: 1;
-  }
+
 
 }
 
@@ -719,34 +286,13 @@ a {
 
 @media only screen and (min-width: 800px) and (min-height: 1100px) {
 
-  .big-text-container{
-  height: 300px;
-  width: 500px;
-  font-weight: 500;
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  opacity: 1;
-  }
+
 
 }
 
 
 @media only screen and (min-width: 1000px) and (min-height: 1100px) {
 
-  .big-text-container{
-  height: 300px;
-  width: 500px;
-  font-weight: 500;
-  font-size: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  opacity: 1;
-  }
 
 }
 
@@ -810,7 +356,7 @@ a {
   .my-name{
     position: relative;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     z-index: 10;
   }
 
