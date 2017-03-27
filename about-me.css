@@ -17,7 +17,7 @@
   .extra-width-page-three{
     height: 1200px;
     width: 100vw;
-    background-color: gray;
+    background-color: #EFEFEF;
   }
   .all-page-three{
     height: 1200px;
@@ -632,7 +632,7 @@ height: 200px;
   .extra-width-page-three{
     height: 100vh;
     width: 100vw;
-    background-color: gray;
+    background-color: #EFEFEF;
   }
   .all-page-three{
     height: 100vh;

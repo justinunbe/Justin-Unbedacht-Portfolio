@@ -70,7 +70,7 @@
   .extra-room-slide-two{
   height: 600px;
   width: 100vw;
-  background-color: gray;
+  background-color: #EFEFEF;
   }
 
   .section-two-page-container{
@@ -468,7 +468,7 @@
     .extra-room-slide-two{
     height: 400px;
     width: 100vw;
-    background-color: gray;
+    background-color: #EFEFEF;
     }
 
     .section-two-page-container{
@@ -674,7 +674,7 @@
   .extra-room-slide-two{
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  background-color: #EFEFEF;
   }
 
   .section-two-page-container{
