@@ -42,6 +42,46 @@
     z-index: 20;
   }
 
+/*links adjust area*/
+
+.linked-in-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.github-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resume-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.linked-in-hide-show{
+  display: none;
+}
+
+.github-hide-show{
+  display: none;
+}
+
+.resume-hide-show{
+  display: none;
+}
+
+
+
+
+
+
   .contact-para-container{
     height: 100px;
     width: 300px;

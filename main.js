@@ -24,6 +24,27 @@ $(document).ready(function() {
 
 //  Functions
 
+
+$(".linked-in-container").hover(function(){
+    $('.linked-in-hide-show').show();
+},function(){
+    $('.linked-in-hide-show').hide();
+});
+
+$(".github-container").hover(function(){
+    $('.github-hide-show').show();
+},function(){
+    $('.github-hide-show').hide();
+});
+
+$(".resume-container").hover(function(){
+    $('.resume-hide-show').show();
+},function(){
+    $('.resume-hide-show').hide();
+});
+
+
+
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
