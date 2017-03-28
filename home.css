@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:500');
 
+@font-face { font-family: Delicious; src: url('Taken by vultures Demo.otf'); }
+
 html {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
@@ -196,11 +198,15 @@ font-family: 'Montserrat', sans-serif;*/
     margin: auto;
   }
 
+  .new-font{
+    font-family: Delicious;
+    font-size: 27px;
+  }
 
   /*header*/
   .first-section-home-page{
   width: 100%;
-  height: 35px;
+  height: 45px;
   position: fixed;
   z-index: 10;
   background-color: black;
