@@ -10,11 +10,11 @@
   /*full page*/
   .extra-width-page-five{
     width: 100vw;
-    height: 100vh;
+    height: 650px;
     background-color: #EFEFEF;
   }
   .all-page-four{
-    height: 100vh;
+    height: 650px;
     max-width: 1280px;
     background-color: white;
     display: flex;
@@ -37,7 +37,7 @@
     height: 300px;
     max-width: 1280px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: 60px;
     position: relative;
@@ -89,6 +89,7 @@
     width: 300px;
   position: relative;
   z-index: 20;
+  margin-top: 25px;
   }
   /*contact info container*/
   .contact-info-container{
@@ -101,19 +102,19 @@
   }
 
   .circle-contact-pic{
-    height: 80vw;
-    width: 80vw;
+    height: 1200px;
+    width: 1200px;
     border-radius: 50%;
     background-image: url("pics/imac-photo.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
-    position: relative;
+    position: absolute;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -200px;
+    margin-top: 150px;
   }
 
   .circle-contact-pic:after {
@@ -129,8 +130,9 @@
     height: 300px;
     width: 500px;
     font-size: 15px;
-    position: relative;
+    position: absolute;
     z-index: 10;
+    margin-top: -240px;
   }
 
   .email-container{
@@ -176,8 +178,9 @@
     height: 300px;
     width: 400px;
     font-size: 15px;
-    position: relative;
+    position: absolute;
     z-index: 10;
+    margin-top: -240px;
   }
 
   .email-container{
