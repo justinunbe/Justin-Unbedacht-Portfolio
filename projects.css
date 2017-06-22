@@ -24,6 +24,14 @@
     display: none;
   }
 
+  #wooly-video{
+    border-radius: 8px 8px 8px 8px;
+    width: 100%    !important;
+  height: auto   !important;
+  box-shadow: 10px 10px 5px #888888;
+  border: #A9A9A9 solid 1px;
+  }
+
   #quenchua-video{
     border-radius: 8px 8px 8px 8px;
     width: 100%    !important;

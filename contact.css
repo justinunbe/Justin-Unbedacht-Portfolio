@@ -13,6 +13,7 @@
     height: 650px;
     background-color: #EFEFEF;
   }
+
   .all-page-four{
     height: 650px;
     max-width: 1280px;
@@ -21,8 +22,21 @@
     flex-direction: column;
     opacity: 1;
     margin: auto;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    background-image: url("pics/imac-photo-15.gif");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
 
+  .center-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-left: -25px;
+  }
 
   .border-line{
     width: 80%;
@@ -31,6 +45,14 @@
     background-color: #A9A9A9;
     z-index: 9;
     position: relative;
+  }
+
+  .contact-content-container{
+    width: 480px;
+    height: 300px;
+    position: relative;
+    z-index: 50;
+    opacity: 1;
   }
   /*Title Container*/
   .contact-container{
@@ -42,6 +64,7 @@
     font-size: 60px;
     position: relative;
     z-index: 20;
+    opacity: 1;
   }
 
 /*links adjust area*/
@@ -104,12 +127,12 @@
   .circle-contact-pic{
     height: 1200px;
     width: 1200px;
-    border-radius: 50%;
-    background-image: url("pics/imac-photo.jpg");
+    /*border-radius: 50%;*/
+    /*background-image: url("pics/imac-photo.jpg");*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -117,14 +140,14 @@
     margin-top: 150px;
   }
 
-  .circle-contact-pic:after {
+  /*.circle-contact-pic:after {
       content: "";
       display: block;
       background: radial-gradient(circle, rgba(255,255,255,.6) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,1) 100%);
       border-radius: 50%;
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-  }
+  }*/
 
   .contact-info-on-circle{
     height: 300px;
@@ -185,9 +208,9 @@
 
   .email-container{
   height: 50%;
-  width: 100%;
+  width: 400px;
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-between;
   align-items: center;
   font-size: 25px;
   }
